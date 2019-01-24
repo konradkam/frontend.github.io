@@ -1,0 +1,29 @@
+.button.is-primary.is-outlined.is-rounded {
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    color: $my-white-color;
+    background-color: rgba($my-white-color, 0);
+    border: 2px solid $my-white-color;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 700;
+    -webkit-transition: color 0.25s ease-in-out,
+                        background-color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out,
+                background-color 0.25s ease-in-out;
+    &:hover {
+        color: $primary-color;
+        background-color: rgba($my-white-color, 1);
+    }
+}
+.button.is-primary.is-outlined.is-rounded.nav-button {
+    font-size: 0.875rem;
+    color: $primary-color;
+    background-color: rgba($primary-color, 0);
+    border: 2px solid $primary-color;
+    &:hover {
+        color: $my-white-color;
+        background-color: rgba($primary-color, 1);
+    }
+}

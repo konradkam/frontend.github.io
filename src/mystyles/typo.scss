@@ -1,0 +1,99 @@
+body {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: $darkgray-color;
+}
+.intro-big-txt {
+    font-size: 1.25rem;
+    color: $darkgray-color;
+    text-align: center;
+    @media only screen and (max-width : 768px) {
+        font-size: 1.125rem;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: $my-black-color;
+}
+h2 {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.color-txt {
+    color: $primary-color;
+    font-weight: 700;
+    @media (min-width: 1024px) {
+        white-space: nowrap;
+    }
+}
+.link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: $darkgray-color;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1px;
+        width:100%;
+        height: 0;
+        opacity: .65;
+        -webkit-box-shadow: 0px 0px 0px 2px $primary-color;
+                box-shadow: 0px 0px 0px 2px $primary-color;
+        -webkit-transition: opacity .35s ease-in-out;
+                transition: opacity .35s ease-in-out;
+    }
+    &:hover {
+        text-decoration: none;
+        color: $darkgray-color;
+    }
+    &:hover:after {
+        opacity: 1;
+        -webkit-animation: slide 0.5s ease-in-out 0s 1;
+                animation: slide 0.5s ease-in-out 0s 1;
+    }
+}
+.link.is-white {
+    color: rgba($my-white-color, 0.8);
+    &:hover {
+        color: rgba($my-white-color, 1);
+    }
+    &:after {
+        -webkit-box-shadow: 0px 0px 0px 2px $my-white-color;
+                box-shadow: 0px 0px 0px 2px $my-white-color;
+    }
+}
+.blink {
+  animation: blink .8s steps(2, start) infinite;
+  -webkit-animation: blink .8s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+      visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+      visibility: hidden;
+  }
+}
+@-webkit-keyframes slide {
+    0% {-webkit-transform: translateX(0%);transform: translateX(0%);}
+    50% {-webkit-transform: translateX(100%);transform: translateX(100%);}
+    50.02% {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+    100% {-webkit-transform: translateX(0%);transform: translateX(0%);}
+  }
+@keyframes slide {
+    0% {-webkit-transform: translateX(0%);transform: translateX(0%);}
+    50% {-webkit-transform: translateX(100%);transform: translateX(100%);}
+    50.02% {-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+    100% {-webkit-transform: translateX(0%);transform: translateX(0%);}
+  }

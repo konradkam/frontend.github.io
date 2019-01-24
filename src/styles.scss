@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i');
+
+// @import "~bulma/bulma";
+@import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/components/level";
+@import "~bulma/sass/components/navbar";
+@import "~bulma/sass/grid/_all";
+@import "~bulma/sass/layout/_all";
+
+@import "mystyles/variables.scss";
+@import "mystyles/global.scss";
+@import "mystyles/layout.scss";
+@import "mystyles/buttons.scss";
+@import "mystyles/typo.scss";
+
+@import "~aos/src/sass/aos";
