@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "aos": "^2.3.4",
     "babel-loader": "^8.0.6",
-    "bulma": "^0.7.4",
+    "bulma": "^0.7.5",
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^3.0.1",
@@ -23,11 +23,11 @@
     "image-webpack-loader": "^4.6.0",
     "node-sass": "^4.12.0",
     "resolve-url-loader": "^3.1.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
     "two.js": "^0.7.0-beta.3",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1"
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
   }
 }
